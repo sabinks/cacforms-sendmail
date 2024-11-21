@@ -2,9 +2,9 @@ import { Injectable } from '@nestjs/common';
 import { MailService } from 'src/mail/mail.service';
 
 @Injectable()
-export class ForgotPasswordService {
+export class EmailVerificationService {
   constructor(private mailer: MailService) {}
-  async forgotPassword(payload: any) {
-    this.mailer.forgotPasswordMail(payload);
+  async emailVerification(payload: any) {
+    this.mailer.emailVerificationMail(payload);
   }
 }

@@ -10,9 +10,9 @@ services:
     environment:
       - SERVER_NAME="Mail Server"
       - PORT=3081
-      - NODE_ENV="production"
+      - NODE_ENV="development"
     env_file:
-      - .env.production
+      - .env.development
     networks:
       - my-network
 
